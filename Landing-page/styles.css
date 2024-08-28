@@ -1,0 +1,146 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #FFF9F4;
+}
+
+.container {
+    display: flex;
+    flex-direction: column; /* Stacks children vertically */
+    padding: 20px; /* Add padding around the container */
+}
+
+.row {
+    display: flex;
+    justify-content: space-between; /* Ensures the items are spread out */
+    align-items: center; /* Aligns items vertically centered */
+    margin-bottom: 40px; /* Space between the row and the shoe sections */
+}
+
+.ellipse-section,
+.content-section {
+    flex: 1; /* Allows both sections to grow equally */
+    text-align: center; /* Center-aligns the content inside */
+    margin-left: 5px;
+}
+
+.ellipse-section img,
+.content-section img {
+    max-width: 100%; /* Ensures images do not overflow */
+    height: auto; /* Keeps aspect ratio of the images */
+}
+
+header {
+    background-color: #FFF9F4;
+    padding: 20px 0;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+}
+
+.shop-logo {
+    width: 200px;
+    height: 50px;
+    margin-right: 15px;
+}
+
+.shop-name {
+    font-size: 24px;
+    color: #333;
+}
+
+.nav-menu ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu ul li {
+    margin-left: 30px;
+}
+
+.nav-menu ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.nav-menu ul li a:hover {
+    color: #FF6347; /* Change to your preferred hover color */
+}
+
+.buy-now-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff; /* Text color inside the button */
+    background-color: #002aff; /* Blue button color */
+    text-decoration: none; /* Removes underline */
+    border-radius: 5px; /* Rounds the corners */
+    border: none; /* Removes default border */
+    transition: background-color 0.3s; /* Smooth transition on hover */
+}
+
+.buy-now-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+h1 {
+    font-size: 65px;
+    color: #FABE4C;
+    margin-left: 0; /* Center align the heading */
+}
+
+h2 {
+    font-size: 60px;
+    color: #363958;
+    margin-left: 0; /* Center align the heading */
+}
+
+p {
+    font-size: 15px;
+    color: #666;
+}
+
+.shoes-section {
+    margin-bottom: 40px;
+}
+
+.shoes-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center; /* Center align the section title */
+}
+
+.shoes-gallery {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px; /* Adds space between images */
+}
+
+.shoes-gallery img {
+    width: 30%;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.shoes-gallery img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
